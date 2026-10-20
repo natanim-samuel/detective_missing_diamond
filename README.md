@@ -1,17 +1,18 @@
-# detective_missing_diamond
+# Detective: The Missing Diamond
 
-A new Flutter project.
+A Flutter mystery game with suspect interviews, evidence collection, investigation locations, deductions, multiple cases, and locally saved progress.
 
-## Getting Started
+## Run it
 
-This project is a starting point for a Flutter application.
+1. Install Flutter and Android Studio.
+2. Open a terminal in this folder.
+3. Run:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+flutter run
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+If you already created a Flutter project, copy `lib/main.dart` into its `lib/main.dart`, replace the project's `pubspec.yaml` with this one (or add `shared_preferences: ^2.5.3` under dependencies), then run `flutter pub get`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Progress is stored locally using `shared_preferences`. The reset icon in the top-right corner clears game progress.
